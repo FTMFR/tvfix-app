@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TvFlix</title>
+    <!-- meta tags -->
+    <meta name="title" content="TvFlix" />
+    <meta name="description" content="TvFlix is a popular app made by FTMFR" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <img class="background" src="assets/images/Blue.jpg" alt="" />
+    <section class="boding">
+      <div class="container2">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </a>
+        <div class="header2">
+          <div class="login-sign">
+            <a href="login.html">Login</a>
+            <span>|</span>
+            <a href="signin.html" class="active">Signup</a>
+          </div>
+          <div class="join">
+            <div>Join for enjoy</div>
+            <img src="assets/images/staring.png" alt="enjoy" />
+          </div>
+        </div>
+        <div class="contents">
+          <div class="inputs">
+            <label for="Mobile">Mobile Number*</label>
+            <input
+              type="number"
+              name="Mobile"
+              id="mobile"
+              class="mobile-number"
+              placeholder="Enter your mobile number..."
+              required
+              maxlength="11"
+            />
+            <div class="alert"></div>
+            <div class="captcha">
+              <input
+                type="number"
+                name="captcha"
+                id="captcha"
+                class="captcha-real"
+                required
+              />
+              <div class="captcha-input">
+                <div id="captchaInput"></div>
+                <i class="bx bx-refresh bx-lg"></i>
+              </div>
+              <div class="alert2"></div>
+            </div>
+          </div>
+          <div class="agreements">
+            <div class="little-box">
+              <i class="bx bx-check"></i>
+            </div>
+            <span
+              >I agree to all <a href="">terms</a>,
+              <a href="">privacy policy</a> and <a href="">feeds</a>.</span
+            >
+          </div>
+          <button class="btn-success" id="send">Send code</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="tooltip">
+      <p>Please fill fields.</p>
+    </div>
+
+    <div class="overlay2"></div>
+
+    <div class="lds-dual-ring"></div>
+
+    <div class="otp">
+      <a href="signin.html">
+        <i class="bx bx-x bx-md"></i>
+      </a>
+      <div class="enter">Enter verification code</div>
+
+      <div class="numbers"></div>
+      <div class="correct">
+        <a href="signin.html">Correct entered number</a>
+      </div>
+      <div class="otp-box">
+        <div class="inner-box">
+          <ul class="num">
+            <li class="all"><input type="number" /></li>
+            <li class="timerBox exeption"></li>
+          </ul>
+        </div>
+        <div class="btn-success verify">Verify</div>
+        <div class="send-again">
+          Didn’t get a code? <a href="#">Send again</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="finall-step">
+      <div class="container2">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </a>
+        <div class="header2">
+          <div class="login-sign">
+            <a href="login.html">Login</a>
+            <span>|</span>
+            <a href="signin.html" class="active">Signup</a>
+          </div>
+          <div class="join">
+            <div>Join for enjoy</div>
+            <img src="assets/images/staring.png" alt="enjoy" />
+          </div>
+        </div>
+        <div class="contents">
+          <div class="inputs">
+            <label for="password">Password*</label>
+            <input
+              type="tel"
+              name="password"
+              id="password"
+              class="password"
+              placeholder="Enter your password..."
+            />
+            <label for="confirm">Confirn Password*</label>
+            <input
+              type="tel"
+              name="confirm"
+              id="confirm"
+              class="confirm"
+              placeholder="Confirm your password..."
+            />
+            <p class="confirmation"></p>
+          </div>
+
+          <div class="remember">
+            <div class="little-box">
+              <i class="bx bx-check"></i>
+            </div>
+            <span>Remember me</span>
+          </div>
+          <div class="btn-success signin">signup</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/signup.js"></script>
+  </body>
+</html>
